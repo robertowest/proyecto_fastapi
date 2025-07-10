@@ -1,0 +1,1 @@
+# rutas y endpoints organizados por versión o módulo

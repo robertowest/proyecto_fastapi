@@ -1,0 +1,1 @@
+# declarative base class for sqlalchemy models
