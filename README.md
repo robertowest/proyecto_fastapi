@@ -49,20 +49,20 @@ app/
 ```
 
 # Separación de capas
-api/: organiza tus rutas (APIRouter) por versión o dominio funcional.
-core/: código común.
-db/: define tus modelos SQLAlchemy, sesión y operaciones CRUD.
-dependencies/: dependencias reutilizables con Depends.
-schemas/: define Pydantic models para validar entrada/salida (Request/Response).
-services/: lógica de negocio (envío de correos, pagos, procesamientos).
-utils/: funciones útiles.
-tests/: pruebas unitarias.
-main.py: punto de entrada de tu aplicación.
+- api/: organiza tus rutas (APIRouter) por versión o dominio funcional.
+- core/: código común.
+- db/: define tus modelos SQLAlchemy, sesión y operaciones CRUD.
+- dependencies/: dependencias reutilizables con Depends.
+- schemas/: define Pydantic models para validar entrada/salida (Request/Response).
+- services/: lógica de negocio (envío de correos, pagos, procesamientos).
+- utils/: funciones útiles.
+- tests/: pruebas unitarias.
+- main.py: punto de entrada de tu aplicación.
 
 # Tips extras
-✔️ Usa APIRouter para modularidad.
-✔️ Define tus dependencias reutilizables, por ejemplo: obtener usuario autenticado.
-✔️ Mantén la lógica de negocio fuera de las rutas → colócala en services/.
-✔️ Versiona tu API desde el principio (/api/v1/).
-✔️ Documenta bien con docstrings y summary/description en tus endpoints.
+- Usa APIRouter para modularidad.
+- Define tus dependencias reutilizables, por ejemplo: obtener usuario autenticado.
+- Mantén la lógica de negocio fuera de las rutas → colócala en services/.
+- Versiona tu API desde el principio (/api/v1/).
+- Documenta bien con docstrings y summary/description en tus endpoints.
 
